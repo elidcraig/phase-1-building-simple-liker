@@ -3,7 +3,13 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-
+document.addEventListener('DOMContentLoaded', () => {
+  const likeGlyphs = document.querySelectorAll('.like-glyph')
+  // console.log(likeGlyphs)
+  likeGlyphs.forEach(glyph => {glyph.addEventListener('click', () => {
+    console.log(glyph)
+  })})
+} )
 
 
 
